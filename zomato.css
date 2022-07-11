@@ -113,11 +113,11 @@ ul li
 #online_cont1 
 {
     display: block;
-    width: 50%;
+    width: 30.2%;
+    float: left;
     overflow: hidden;
-    height: 20rem;
     border-radius: 1rem;
-    margin: 2.5rem 0rem;
+    margin: 2.5rem 1.5%;
     border: 0.5px solid rgba(79, 79, 79, 0.701);
     transition: 0.5s transform;
 }
@@ -129,7 +129,7 @@ ul li
 {
     display: block;
     width: 100%;
-    height:15rem;
+    height:8rem;
 }
 #online_cont1 >p
 {
@@ -146,6 +146,11 @@ ul li
 {
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.562);
 }
+#online_cont2
+{
+    overflow: hidden;
+    clear: both;
+}
 #online_cont2 h2
 {
     font-size: 30px;
@@ -153,11 +158,13 @@ ul li
 }
 #popular_local
 {
-    width: 30%;
+    width: 29%;
     border-radius: 1rem;
     border: 0.5px solid rgba(79, 79, 79, 0.701);
     padding-left: 1rem;
+    float: left;
     transition: 0.5s all;
+    margin: 0% 1%;
     
 }
 #popular_local h4
