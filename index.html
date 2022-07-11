@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="zomato.css">
         <link rel="icon" type="image/x-ixon" href=""> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -62,11 +63,154 @@
             <div id="app_download_cont1">
                 <div id="app_download_img">
                     <img src="images/Homepage/app_download.avif">
+                </div>
+                <div id="app_download_form">
+                    <h1>Get the Zomato app</h1>
+                    <h3>We will send you a link, open it on your phone to download the app</h3>
+                    <input type="radio" name="choose" value="email"><span style="padding-left: 10px;padding-right:70px;font-size: 18px;">Email</span>
+                    <input type="radio" name="choose" value="phone"><span style="padding-left: 10px;padding-right:70px;font-size: 18px;">Phone</span>
+                    <input type="text" placeholder="Email"><button>Share App link</button>
+                    <h5>Download app from </h5>
+                    <img src="images/Homepage/google_play.png">
+                    <img src="images/Homepage/apple.png">
+                </div>
             </div>
         </div>
         <div id="explore">
+            <div id="exp_cont1">
+                <h1>Explore options near me</h1>
+                <div id="exp_option" onclick="myfunc()">
+                    <h2>Popular cuisines near me</h2>
+                    <div id="option_1">
+                        hi this is for tshshkjsdgakdgjakjsd
+                    </div>
+                </div>
+                <div id="exp_option2" onclick="myfunct()">
+                    <h2>Popular restaurant types near me</h2>
+                    <div id="option_2">
+                        hi this is for tshshkjsdgakdgjakjsd
+                    </div>
+                </div>
+                <div id="exp_option3" onclick="myfunctio()">
+                    <h2>Cities We Deliver To</h2>
+                    <div id="option_3">
+                        hi this is for tshshkjsdgakdgjakjsd
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
+            <div id="logo">
+                <img src="images/Homepage/foot_logo.avif">
+                <div id="foot_option">
+                    <select>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                    </select>
+                    <select>
+                        <option>English</option>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                        <option>India</option>
+                    </select>
+                </div>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>ABOUT ZOMATO</b></li>
+                    <li>Who we are</li>
+                    <li>Blog</li>
+                    <li>Work with us</li>
+                    <li>Invstor relatiosn</li>
+                    <li>Report fraud</li>
+                </ul>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>ZOMAVERSE</b></li>
+                    <li>Zomato</li>
+                    <li>Feeding India</li>
+                    <li>Hyperpure</li>
+                    <li>Zomaland</li>
+                </ul>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>FOR RESTAURANTS</b></li>
+                    <li>Partner with us</li>
+                    <li>Apps for you</li>
+                </ul>
+                <ul>
+                    <li><b> FOR ENTERPRISES</b></li>
+                    <li>Zomato for work</li>
+                </ul>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>LEARN MORE</b></li>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>SOCIAL LINKS</b></li>
+                    <li><i class="fa fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-facebook"></i>
+                    </li>
+                    <li><img src="images/Homepage/apple.png" alt="apple"></li>
+                    <li><img src="images/Homepage/google_play.png" alt="apple"></li>
+                </ul>
+            </div>
+            <hr style="clear:both;"></hr>
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
         </footer>
+        <script>
+            function myfunc()
+            {
+                var el=document.getElementById("option_1");
+                if(el.style.display==="none")
+                {
+                    el.style.display="block";
+                }
+                else
+                {
+                    el.style.display="none";
+                }
+            }
+            function myfunct()
+            {
+                var el=document.getElementById("option_2");
+                if(el.style.display==="none")
+                {
+                    el.style.display="block";
+                }
+                else
+                {
+                    el.style.display="none";
+                }
+            }
+            function myfunctio()
+            {
+                var el=document.getElementById("option_3");
+                if(el.style.display==="none")
+                {
+                    el.style.display="block";
+                }
+                else
+                {
+                    el.style.display="none";
+                }
+            }
+        </script>
     </body>
 </html>
