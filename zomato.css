@@ -351,8 +351,9 @@ footer #logo
 footer select
 {
     
-    margin: 0rem 11px;
+    margin: 0rem -13px;
     width: 5rem;
+    padding: 0px;
     height: 44px;
     font-size: 1rem;
 }
@@ -406,6 +407,16 @@ footer .fa
 {
     width: 88%;
 
+}
+#foot_option_select1
+{
+    width: 50%;
+    float: left;
+}
+#foot_option_select2
+{
+    width: 50%;
+    float: right;
 }
 /* phone and tab */
 
@@ -482,7 +493,8 @@ footer .fa
         margin: 0.5rem 0rem;
         font-weight: 300;
     }
-    #online_cont1 >h5 {
+    #online_cont1 >h5 
+    {
         
         font-size: 19px;
     }
@@ -495,6 +507,36 @@ footer .fa
     {
         width: 100%;
     }
+    .foot_cont
+    {
+        width: 50%;
+        float: left;
+        overflow: hidden;
+        height: 13rem;
+    }
+    #foot_option
+    {
+        clear: both;
+        float: none;
+        margin: 0rem;
+        overflow: hidden;
+        width: 30%;
+    }
+    #foot_option_select1 , #foot_option_select2
+    {
+    margin: 0rem;
+    float: left;
+    }
+    footer select
+    {
+        margin: 0rem;
+    }
+    #social_link
+    {
+        display: none;
+        visibility: hidden;
+    }
+
     
 }
 
