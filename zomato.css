@@ -6,7 +6,10 @@ body
 }
 
 /*header*/
-
+#nav_phon_cont
+{
+    display: none;
+}
 header
 {
     height: 26.5rem;
@@ -397,7 +400,7 @@ footer>p
 }
 .foot_cont ul li img
 {
-    width: 10rem;
+    width: 88%;
 
 }
 /* phone and tab */
@@ -422,7 +425,7 @@ footer>p
     }
     #phon_nav
     {
-        width: 100%;
+        width: 90%;
         display: block;
     }
     #nav_phon_cont
