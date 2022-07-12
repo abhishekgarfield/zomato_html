@@ -105,7 +105,7 @@ ul li
 /* order_online */
 #order_online
 { 
-    width: 100%;
+    width: 90%;
     max-width: 1024px;
     margin:0rem auto 2rem auto;  
 }
@@ -285,7 +285,7 @@ ul li
 }
 #exp_cont1
 {
-    width: 100%;
+    width: 90%;
     margin: auto;
     max-width: 1024px;
    
@@ -321,7 +321,7 @@ ul li
 
 footer
 {
-    width: 100%;
+    width: 90%;
     max-width: 1024px;
     margin: auto;
 }
