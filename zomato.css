@@ -118,6 +118,10 @@ ul li
     max-width: 1024px;
     margin:0rem auto 2rem auto;  
 }
+#order_online a
+{
+    color: inherit;
+}
 
 #online_cont1 
 {
