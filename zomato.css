@@ -403,7 +403,7 @@ footer .fa
     width: 88%;
 
 }
-/* phone and tab 
+/* phone and tab */
 
 @media screen and (max-width:790px)
 {
@@ -440,19 +440,59 @@ footer .fa
     {
         list-style-type: none;
     }
+    #nav_phon_cont ul li
+    {
+        padding: 2% 0%;
+        color: rgb(105, 105, 105);
+    }
     #nav_phon_cont > img
     {
         position: absolute;
-        right: 7px;
-        top: -42px;
-
+        right: 13px;
+        width: 9rem;
+        height: 2rem;
+        top: -29px;
     }
     .fa-remove
     {
         color: black;
         font-size: 3rem;
     }
-    */
+    #online_cont1
+    {
+        height: 15rem;
+    }
+    #popular_local
+    {
+        height: 3.5rem;
+        padding-left: 0.8rem;
+    }
+    #popular_local >p
+    {
+        margin: 1px;
+        font-size: 16px;
+    }
+    #popular_local >h4
+    {
+        font-size: 16px;
+        margin: 0.5rem 0rem;
+        font-weight: 300;
+    }
+    #online_cont1 >h5 {
+        
+        font-size: 19px;
+    }
+    #app_download_img
+    {
+        display: none;
+        visibility: hidden;
+    }
+    #app_download_form
+    {
+        width: 100%;
+    }
+    
+}
 
     /* find page */
 
