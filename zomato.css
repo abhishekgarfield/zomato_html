@@ -150,7 +150,9 @@ ul li
 {
     overflow: hidden;
     clear: both;
+    padding-bottom: 2rem;
 }
+
 #online_cont2 h2
 {
     font-size: 30px;
