@@ -16,6 +16,11 @@ header
     background-position: center center;
     background-size: cover
 }
+#phon_nav
+    {
+       display: none;
+       
+    }
 
 #head_cont1
 {
@@ -42,6 +47,7 @@ clear: both;
 {
     width: fit-content;
     margin: 2rem auto;
+    text-align: center;
 }
 #nav_options
 {
@@ -393,4 +399,55 @@ footer>p
 {
     width: 10rem;
 
+}
+/* phone and tab */
+
+@media screen and (max-width:790px)
+{
+    #nav_bar ul
+    {
+        display: none;
+        visibility: hidden;
+    }
+    .fa
+    {
+        color: azure;
+        font-size: 1rem;
+    }
+    #phon_nav i
+    {
+        background-color: transparent;
+        font-size: 1.5rem;
+        margin: 11px 0px 0px 10px;
+    }
+    #phon_nav
+    {
+        width: 100%;
+        display: block;
+    }
+    #nav_phon_cont
+    {
+        position: fixed;
+        height: 100%;
+        display: none;
+        width: 100%;
+        background-color: white;
+    }
+    #nav_phon_cont>ul
+    {
+        list-style-type: none;
+    }
+    #nav_phon_cont > img
+    {
+        position: absolute;
+        right: 7px;
+        top: -42px;
+
+    }
+    .fa-remove
+    {
+        color: black;
+        font-size: 3rem;
+    }
+    
 }
