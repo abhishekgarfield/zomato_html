@@ -383,7 +383,7 @@ footer>p
     line-height: 1.7rem;
  
 }
-.fa
+footer .fa
 {
     color: white;
     background-color: black;
@@ -453,4 +453,177 @@ footer>p
         font-size: 3rem;
     }
     */
+
+    /* find page */
+
+    #find_head
+    {
+        background-color: white;
+    }
+    #find_head_cont
+    {
+        max-width: 1024px;
+        margin: 1rem auto 0rem auto;
+        width: 90%;
+        
+    }
+    #find_head_cont1
+    {
+        height: 46px;
+        overflow: hidden;
+        margin: 1.5rem auto;
+        
+    }
+    #find_head_cont1_1 , #find_head_cont1_2,
+    #find_head_cont1_3
+    {
+        
+        float: left;
+    }
+    #find_head_cont1_1 a >img
+    {
+            height: 28px;
+            display: block;
+            padding: 7px 0px;
+            width: 68%;
+    }
+    #find_head_cont1_1
+    {
+        width: 20%;
+    }
+    #find_head_cont1_2 
+    {
+        width: 59%;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        height: 44px;
+        box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+        border: 1px solid rgb(232, 232, 232);
+    }
+    #find_head_cont1_2  select
+    {
+        height: 44px;
+        width: 30%;
+        margin: 0rem;
+        padding: 0rem;
+        font-size: 1rem;
+        border: none;
+    }
+    #find_head_cont1_2  input[type="text"]
+    {
+        
+        width: 68%;
+        height: 100%;
+        font-size: 1rem;
+        margin: 0rem;
+        border: none;
+        padding: 0rem;
+    }
+    #find_head_cont1_3
+    {
+        width: 20%;
+    }
+    #find_head_cont1_3 a
+    {
+        width: fit-content;
+        display: block;
+        float: left;
+        font-size: 18px;
+        padding: 11px;
+        color: rgb(105, 105, 105);
+        text-decoration: none;
+        font-weight: 200;
+    }
+
+    /* path display */
+    #find_head_cont2
+    {
+        width: 100%;
+        height: 35px;
+        margin: 1rem auto;
+        color:rgba(142, 139, 139, 0.684);
+    }
+    /* find options */
+    #find_head_cont3
+    {
+        height: 5.5rem;
+        margin: 1rem auto 0rem auto;
+        border-bottom: 1px solid rgba(142, 139, 139, 0.684);
+    }
+    #filters
+    {
+        background-color: white;
+        position: sticky;
+        top: 0px;
+    }
+   .find_options img
+   {
+    display: block;
+    width: 2rem;
+    padding: 1rem;
     
+   }
+   .find_options_img
+   {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height:4rem;
+    float:left;
+    background: rgb(252, 238, 192);
+   }
+   .find_options a span
+   {
+    display: block;
+    padding: 1.2rem;
+    width: fit-content;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+   }
+   #nightlife, #dining
+   {
+    background-color:rgba(132, 129, 129, 0.101);
+   }
+   #find_head_cont3_1 ,#find_head_cont3_2,#find_head_cont3_3
+   {
+     display: inline-block;
+     height: 100%;
+     margin: 0rem 0.9rem 0rem 0rem ;
+   } 
+   #find_head_cont3_1 
+   {
+     border-bottom: 2px solid red;
+   }
+    
+   /* filter */
+   #find_head_cont4
+   {
+    padding: 2rem 0rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+   }
+
+   .fiter_buttons
+   {
+    width: fit-content;
+    float: left;
+    margin-right: 1rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid rgba(142, 139, 139, 0.684);
+   }
+   .fiter_buttons span
+   {
+    padding: 6px 11px;
+    display: block;
+   }
+   .fiter_buttons span i
+   {
+    margin-right: 6px;
+   }
