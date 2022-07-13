@@ -11,10 +11,7 @@ body
     display: none;
 }
 header
-{
-    height: 26.5rem;
-    
-    background-image: url("images/homepage/header_back.png");
+{ background-image: url("images/homepage/header_back.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover
@@ -31,8 +28,9 @@ header
 width: 100%;
 max-width: 1024px;
 margin: auto;
-height: 26rem;
 clear: both;
+overflow: hidden;
+
 }
 #nav_bar
 {
@@ -56,8 +54,9 @@ clear: both;
 {
     width: 60%;
     height: 44px;
-    margin: auto;
-    border-radius: 1rem;
+    margin: 0rem auto 4rem auto;
+    border-radius: 15px;
+    overflow: hidden;
 }
 #nav_options > select
 {
@@ -126,7 +125,7 @@ ul li
 #online_cont1 
 {
     display: block;
-    width: 30.2%;
+    width: 30%;
     float: left;
     overflow: hidden;
     border-radius: 1rem;
@@ -435,8 +434,8 @@ footer .fa
     #phon_nav i
     {
         background-color: transparent;
-        font-size: 1.5rem;
-        margin: 11px 0px 0px 10px;
+        font-size: 1.7rem;
+        margin: 11px 0px 0px 13px;
     }
     #phon_nav
     {
@@ -468,18 +467,38 @@ footer .fa
         height: 2rem;
         top: -29px;
     }
+    #nav_info >h1
+    {
+        font-size: 24px;
+        width: 90%;
+        margin: auto;
+    }
+    #nav_options > select
+    {
+        height: 44px;
+        width: 100%;
+    }
+    #nav_options 
+    {
+        height: 88px;
+        width: 80%;
+        border-radius: 15px;
+    }
     .fa-remove
     {
         color: black;
         font-size: 3rem;
     }
-    #online_cont1
+    #online_cont1>p
     {
-        height: 15rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        font-size: 13px; 
     }
     #popular_local
     {
-        height: 3.5rem;
+        height: fit-content;
         padding-left: 0.8rem;
     }
     #popular_local >p
@@ -495,8 +514,7 @@ footer .fa
     }
     #online_cont1 >h5 
     {
-        
-        font-size: 19px;
+        font-size: 14px;
     }
     #app_download_img
     {
@@ -518,14 +536,14 @@ footer .fa
     {
         clear: both;
         float: none;
-        margin: 0rem;
+        margin: 1rem 0rem 0rem 0rem;
         overflow: hidden;
-        width: 30%;
+        width: 40%;
     }
     #foot_option_select1 , #foot_option_select2
     {
-    margin: 0rem;
-    float: left;
+        margin: 0rem;
+        float: left;
     }
     footer select
     {
@@ -536,8 +554,6 @@ footer .fa
         display: none;
         visibility: hidden;
     }
-
-    
 }
 
     /* find page */
@@ -644,72 +660,71 @@ footer .fa
     }
    .find_options img
    {
-    display: block;
-    width: 2rem;
-    padding: 1rem;
+        display: block;
+        width: 2rem;
+        padding: 1rem;
     
    }
    .find_options_img
    {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 4rem;
-    height:4rem;
-    float:left;
-    background: rgb(252, 238, 192);
+        border-radius: 50%;
+        overflow: hidden;
+        width: 4rem;
+        height:4rem;
+        float:left;
+        background: rgb(252, 238, 192);
    }
    .find_options a span
-   {
-    display: block;
-    padding: 1.2rem;
-    width: fit-content;
-    float: left;
-    font-size: 1.5rem;
-    font-weight: 500;
-   
-   }
+    {
+        display: block;
+        padding: 1.2rem;
+        width: fit-content;
+        float: left;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
    #nightlife, #dining
    {
-    background-color:rgba(132, 129, 129, 0.101);
+         background-color:rgba(132, 129, 129, 0.101);
    }
    #find_head_cont3_1 ,#find_head_cont3_2,#find_head_cont3_3
    {
-     display: inline-block;
-     height: 100%;
-     margin: 0rem 0.9rem 0rem 0rem ;
+        display: inline-block;
+        height: 100%;
+        margin: 0rem 0.9rem 0rem 0rem ;
    } 
    #find_head_cont3_1 
    {
-     border-bottom: 2px solid red;
+        border-bottom: 2px solid red;
    }
     
    /* filter */
    #find_head_cont4
    {
-    padding: 2rem 0rem;
-    overflow: hidden;
-    position: sticky;
-    top: 0px;
-    max-width: 1024px;
-    width: 90%;
-    margin: auto;
+        padding: 2rem 0rem;
+        overflow: hidden;
+        position: sticky;
+        top: 0px;
+        max-width: 1024px;
+        width: 90%;
+        margin: auto;
    }
 
    .fiter_buttons
    {
-    width: fit-content;
-    float: left;
-    margin-right: 1rem;
-    height: 2rem;
-    border-radius: 6px;
-    border: 1px solid rgba(142, 139, 139, 0.684);
+        width: fit-content;
+        float: left;
+        margin-right: 1rem;
+        height: 2rem;
+        border-radius: 6px;
+        border: 1px solid rgba(142, 139, 139, 0.684);
    }
    .fiter_buttons span
    {
-    padding: 6px 11px;
-    display: block;
+        padding: 6px 11px;
+        display: block;
    }
    .fiter_buttons span i
    {
-    margin-right: 6px;
+        margin-right: 6px;
    }
