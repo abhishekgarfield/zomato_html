@@ -45,12 +45,15 @@
                     th.style.backgroundColor="white"
                     th.style.width="100%";
                     x.className="fa fa-remove";
+                    th.style.position="fixed";
+                    el.style.top="38px";
                 }
                 else
                 {
                     el.style.display="none"; 
                     th.style.backgroundColor="transparent";
                     x.className="fa fa-bars";
+                    th.style.position="relative";
                 }
             }
             

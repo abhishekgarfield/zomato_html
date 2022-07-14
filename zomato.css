@@ -448,6 +448,7 @@ footer .fa
         height: 100%;
         display: none;
         width: 100%;
+        top: 38px;
         background-color: white;
     }
     #nav_phon_cont>ul
