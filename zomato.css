@@ -728,3 +728,22 @@ footer .fa
    {
         margin-right: 6px;
    }
+/* find_inspiration" */
+
+#find_inspiration
+{
+    background-color: rgba(243, 243, 243, 0.653);
+}
+#inspi_cont1
+{
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+}
+#inspi_head >h1
+{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0rem;
+    padding-top: 16px;
+}
