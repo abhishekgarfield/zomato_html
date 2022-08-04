@@ -18,7 +18,7 @@ header
 }
 #phon_nav
     {
-       display: none;
+       dislplay: none;
        
     }
 
@@ -716,6 +716,7 @@ footer .fa
    {
         width: fit-content;
         float: left;
+        cursor: pointer;
         margin-right: 1rem;
         height: 2rem;
         border-radius: 6px;
@@ -793,7 +794,7 @@ footer .fa
     height: 14rem;
     display: block;
     border-radius: 10px;
-    background-image: url("/images/find/dal.avif");
+    background-image: url("images/find/dal.avif");
  }
  .food_img img
  {
@@ -924,6 +925,7 @@ footer .fa
 }
 .show_filters_2 i{
     float: right;
+    cursor: pointer;
     margin: 1.3rem 1.3rem 0rem 0rem;
 }
 .tabs
@@ -935,6 +937,10 @@ footer .fa
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgray;
     
+}
+.active{
+    background-color: #d3d3d3e4;
+
 }
 .sho{
     display: block;
@@ -957,10 +963,9 @@ footer .fa
     width: 30%;
     float: left;
     height: 100%;
-    align-self: center;
+align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
     height: 100%;
     color: rgba(0, 0, 0, 0.82);
     background-color: rgba(211, 211, 211, 0.526);
@@ -974,7 +979,11 @@ footer .fa
     height: 100%;
 }
 .label{
+    height: 25%;
     width: 100%;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 30px;
     overflow: hidden;
 }
 .label_output form
@@ -993,6 +1002,7 @@ footer .fa
 {
     width: 1.2rem;
     height:1.2rem;
+    cursor: pointer;
     margin: 0px 10px;
     color:red;
     background-color: red;
@@ -1018,6 +1028,7 @@ footer .fa
         border-radius: 15px;
         margin-left: -1.9rem;
         margin-right: 2rem;
+        cursor: pointer;
         top: 1.7px;
         position: relative;
         background-color:transparent;
@@ -1095,6 +1106,14 @@ margin-left: 1rem;}
     margin: 20px;
 
   }
+  .label:hover
+  {
+    background-color: rgba(211, 211, 211, 0.45);
+  }
 
 
     
+.fiter_buttons:hover
+{
+    background-color: rgba(211, 211, 211, 0.332);
+}
