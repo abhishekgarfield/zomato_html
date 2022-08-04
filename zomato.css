@@ -292,7 +292,7 @@ ul li
     width: 100%;
     margin: auto;
     background: rgb(252, 252, 252);
-    padding: 5rem 0rem;
+    padding: 2rem 0rem;
     
 }
 #exp_cont1
@@ -807,12 +807,14 @@ footer .fa
     overflow: hidden;
     display: flex;
     justify-content: left;
+    flex: 70% 30%;
    
     
  }
  .food_name p
  {
     font-size: 18px;
+    text-transform:capitalize;
  }
  .food_name p, .food_cousine p
  {
@@ -823,17 +825,17 @@ footer .fa
     margin: 0px;
     
  }
- .food_rating p,.food_price p{
+.food_price p{
     margin:0px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
  }
  .food_rating,.food_price
  {
     overflow: hidden;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: right;
     
  }
@@ -853,6 +855,10 @@ footer .fa
     color: white;
     border-radius: 5px;padding: 3px;
     font-size: small;
+    margin:0px;
+    white-space:nowrap;
+    width: 40px;
+    overflow: hidden;
  }
  .food_price p,.food_cousine p
  {
@@ -885,3 +891,163 @@ footer .fa
  }
 
 
+/* ------- show filterrs ----- */
+
+.show_filters
+{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.742);
+    
+}
+.show_filters_2
+{
+    
+    max-width: 660px;
+    background-color: white;
+    margin: auto;
+    height: 30.5rem;
+    z-index: 11;
+    border-radius: 10px;
+}
+.tabs
+{
+    width: 100%;
+    height: 27rem;
+    
+}
+.labels
+{
+    
+    width: 30%;
+    float: left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    border: 2px solid pink;
+}
+.label_output
+{
+   width: 68%;
+   float: left;
+    height: 100%;
+    border: 2px solid brown;
+}
+.label{
+    width: 100%;
+    flex-grow:1;
+    overflow: hidden;
+    border: 3px solid black;
+}
+.label_output form
+{
+    display: flex;
+    flex-direction: column;
+}
+.label_output form .radios
+{
+    margin: 1rem 0rem 0rem 1rem;
+    align-items: center;
+
+    display: flex;
+}
+.label_output form  div input[type="radio"]
+{
+    width: 1.2rem;
+    height:1.2rem;
+    margin: 0px 10px;
+    color:red;
+    background-color: red;
+}
+.label_output form  div input[type="radio"]:checked::after
+{
+   width: 12px;
+        height: 12px;
+        border-radius: 15px;
+        right: -3.2px;
+        top:3.4px;
+        
+        position: relative;
+        background-color: red;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+}
+.label_output form .radios  label:before
+{
+   width: 1rem;
+        height: 1rem;
+        border-radius: 15px;
+        margin-left: -1.9rem;
+        margin-right: 2rem;
+        top: 1.7px;
+        position: relative;
+        background-color:transparent;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid red;
+}
+
+
+
+.label_output #rad  {
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.label_output #rad .checks{
+    flex: 0 0 40%;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    align-self: center;
+}
+.label_output #rad .checks label{
+margin-left: 1rem;}
+.slider {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 13px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+    margin-top: 14rem;
+    margin-left: 1.3rem;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: red;
+    cursor: pointer;
+  }
+
+
+    
