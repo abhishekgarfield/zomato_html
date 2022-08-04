@@ -4,6 +4,7 @@
         <title>order food</title>
         <link rel="icon" type="image/x-icon" href="/images/homepage/icon.png">
         <link rel="stylesheet" type="text/css" href="/zomato.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -58,11 +59,119 @@
                 <div class="fiter_buttons">
                     <span><i class="fa fa-star"></i>Rating: 4.0+</span>
                 </div>
-                <div class="fiter_buttons">
+                <div class="fiter_buttons" onclick="show()">
                     <span>Cousins<i style="margin-left:6px;" class="fa fa-chevron-down"></i></span>
                 </div>
                 <div class="fiter_buttons">
                     <span>More filters<i style="margin-left:6px;" class="fa fa-chevron-down"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="show_filters">
+            <div class="show_filters_2">
+                <h1>Filters</h1>
+                <hr style="margin: 0px;"/>
+                <div class="tabs">
+                    <div class="labels">
+                        <div class="label" id="default" onclick="show(event,'sort_by')">
+                            <h1>Sort by</h1>
+                         </div>
+                         <div class="label" onclick="show(event,'Cusines')">
+                            <h1>Cusines</h1>
+                        </div>
+                        <div class="label" onclick="show(event,'Rating')">
+                            <h1>Rating</h1>
+                        </div>
+                        <div class="label" Cost_per_person onclick="show(event,'Cost_per_person')">
+                            <h1>Cost per person</h1>
+                        </div>
+                        
+                    </div>
+                    <div class="label_output" id="sort_by">
+                        <form>
+                            <div class="radios">
+                                <input type="radio" name="sort_by" id="Popularity"value="Popularity">
+                                <label for="Popularity">Popularity</label>
+                            </div>
+                            <div class="radios">
+                                <input type="radio" name="sort_by" id="Ratings" value="Rating">
+                                <label for="Ratings">Rating: High to Low</label>
+                            </div>
+                            <div class="radios">
+                                <input type="radio" id="Delivery_Time" name="sort_by" value="Delivery_Time">
+                                <label for="Delivery_Time">Delivery Time</label>
+                            </div>
+                            <div class="radios">    
+                                <input type="radio" name="sort_by" id="Cost_Low_to_High" value="Cost_Low_to_High">
+                                <label for="Cost_Low_to_High">Cost: Low to High</label>
+                            </div>
+                            <div class="radios">    
+                                <input type="radio" name="sort_by" id="Cost_Hight_to_Low" value="Cost_Hight_to_Low">
+                                <label for="Cost_Hight_to_Low">Cost: Hight to Low</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="label_output" id="Cusines">
+                        <form id="rad">
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="American">
+                                <label for="American">American</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="andhra">
+                                <label for="andhra">andhra</label>
+                            </div>
+                            <div class="checks">
+                                    <input type="checkbox" name="Cousines" id="arabian">
+                                    <label for="arabian">arabian</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="bengali">
+                                <label for="bengali">bengali</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="American">
+                                <label for="American">American</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="andhra">
+                                <label for="andhra">andhra</label>
+                            </div>
+                            <div class="checks">
+                                    <input type="checkbox" name="Cousines" id="arabian">
+                                    <label for="arabian">arabian</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="bengali">
+                                <label for="bengali">bengali</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="American">
+                                <label for="American">American</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="andhra">
+                                <label for="andhra">andhra</label>
+                            </div>
+                            <div class="checks">
+                                    <input type="checkbox" name="Cousines" id="arabian">
+                                    <label for="arabian">arabian</label>
+                            </div>
+                            <div class="checks">
+                                <input type="checkbox" name="Cousines" id="bengali">
+                                <label for="bengali">bengali</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="label_output" id="Rating">
+                        <h1 style="color:red ; margin: 1rem;">Value: <span id="demo"></span></h1>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div class="label_output" id="Cost_per_person">
+                        <h1 style="color:red ; margin: 1rem;">Value: <span id="demo1"></span></h1>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -113,23 +222,23 @@
                     </div>
                 </div>
                 <div class="food_item_card">
-                    <div class="food_img">
+                    <div class="food_img" style="background-image: url('/images/find/cake.avif');">
                     </div>
                     <div class="food_item_info">
                         <div class="food_item_info_cont1">
                             <div class="food_name">
-                               <p > Bhena da dhaba</p>
+                               <p > rasoiya 24x7 unlimites</p>
                             </div>
                             <div class="food_rating">
-                               <p>4.0 <i class="fa fa-star"></i></p>
+                               <p>5.0 <i class="fa fa-star"></i></p>
                             </div>
                         </div>
                         <div class="food_item_info_cont2">
                             <div class="food_cousine">
-                                <p> North indian fast food</p>
+                                <p> south indian fast food</p>
                             </div>
                             <div class="food_price">
-                                <p>₹100 for one</p>
+                                <p>₹200 for one</p>
                             </div>
                         </div>
                     </div>
@@ -142,102 +251,102 @@
                     </div>
                 </div>
                 <div class="food_item_card">
-                    <div class="food_img">
+                    <div class="food_img" style="background-image: url('/images/find/ktanai.avif');">
                     </div>
                     <div class="food_item_info">
                         <div class="food_item_info_cont1">
                             <div class="food_name">
-                               <p > Bhena da dhaba</p>
+                               <p > Haveli</p>
                             </div>
                             <div class="food_rating">
-                               <p>4.0 <i class="fa fa-star"></i></p>
+                               <p>3.6 <i class="fa fa-star"></i></p>
                             </div>
                         </div>
                         <div class="food_item_info_cont2">
                             <div class="food_cousine">
-                                <p> North indian fast food</p>
+                                <p>punjabi indian fast food</p>
                             </div>
                             <div class="food_price">
-                                <p>₹100 for one</p>
+                                <p>₹500 for one</p>
                             </div>
                         </div>
                     </div>
                     <hr style="background-color: lightgrey; border: 1px solid lightgray;">
                     <div class="food_stats">
                         <p><i class="fa fa-line-chart" style="color:white;background-color: rgb(135, 158, 235); border-radius: 50%;padding: 6px;"></i>
-                            23000 orders plced recently
+                            29000 orders plced recently
                         </p>
                         <img src="/images/find/max.webp"/>
                     </div>
                 </div>
                 <div class="food_item_card">
-                    <div class="food_img">
+                    <div class="food_img" style="background-image: url('/images/find/kulche.avif');">
                     </div>
                     <div class="food_item_info">
                         <div class="food_item_info_cont1">
                             <div class="food_name">
-                               <p > Bhena da dhaba</p>
+                               <p >vaishno da dhaba</p>
                             </div>
                             <div class="food_rating">
-                               <p>4.0 <i class="fa fa-star"></i></p>
+                               <p>4.7 <i class="fa fa-star"></i></p>
                             </div>
                         </div>
                         <div class="food_item_info_cont2">
                             <div class="food_cousine">
-                                <p> North indian fast food</p>
+                                <p> pure veg fast food</p>
                             </div>
                             <div class="food_price">
-                                <p>₹100 for one</p>
+                                <p>₹150 for one</p>
                             </div>
                         </div>
                     </div>
                     <hr style="background-color: lightgrey; border: 1px solid lightgray;">
                     <div class="food_stats">
                         <p><i class="fa fa-line-chart" style="color:white;background-color: rgb(135, 158, 235); border-radius: 50%;padding: 6px;"></i>
-                            23000 orders plced recently
+                            43000 orders plced recently
                         </p>
                         <img src="/images/find/max.webp"/>
                     </div>
                 </div>
                 <div class="food_item_card">
-                    <div class="food_img">
+                    <div class="food_img" style="background-image: url('/images/find/parantha.avif');">
                     </div>
                     <div class="food_item_info">
                         <div class="food_item_info_cont1">
                             <div class="food_name">
-                               <p > Bhena da dhaba</p>
+                               <p > punjabiyan da dhaba</p>
                             </div>
                             <div class="food_rating">
-                               <p>4.0 <i class="fa fa-star"></i></p>
+                               <p>2.9 <i class="fa fa-star"></i></p>
                             </div>
                         </div>
                         <div class="food_item_info_cont2">
                             <div class="food_cousine">
-                                <p> North indian fast food</p>
+                                <p> indian fast food</p>
                             </div>
                             <div class="food_price">
-                                <p>₹100 for one</p>
+                                <p>₹160 for one</p>
                             </div>
                         </div>
                     </div>
                     <hr style="background-color: lightgrey; border: 1px solid lightgray;">
                     <div class="food_stats">
                         <p><i class="fa fa-line-chart" style="color:white;background-color: rgb(135, 158, 235); border-radius: 50%;padding: 6px;"></i>
-                            23000 orders plced recently
+                            22000 orders plced recently
                         </p>
                         <img src="/images/find/max.webp"/>
                     </div>
                 </div>
                 <div class="food_item_card">
-                    <div class="food_img">
+                    <div class="food_img" style="background-image: url('/images/find/special\ prantha.avif');">
                     </div>
                     <div class="food_item_info">
                         <div class="food_item_info_cont1">
                             <div class="food_name">
-                               <p > Bhena da dhaba</p>
+                               <p >garfield and groups restaurant pvt ltd.</p>
                             </div>
                             <div class="food_rating">
-                               <p>4.0 <i class="fa fa-star"></i></p>
+                               <p>2.9 <i class="fa fa-star"></i></p>
                             </div>
                         </div>
                         <div class="food_item_info_cont2">
@@ -245,14 +354,14 @@
                                 <p> North indian fast food</p>
                             </div>
                             <div class="food_price">
-                                <p>₹100 for one</p>
+                                <p>₹560 for one</p>
                             </div>
                         </div>
                     </div>
                     <hr style="background-color: lightgrey; border: 1px solid lightgray;">
                     <div class="food_stats">
                         <p><i class="fa fa-line-chart" style="color:white;background-color: rgb(135, 158, 235); border-radius: 50%;padding: 6px;"></i>
-                            23000 orders plced recently
+                            43000 orders plced recently
                         </p>
                         <img src="/images/find/max.webp"/>
                     </div>
@@ -381,6 +490,7 @@
             <hr style="clear:both;"></hr>
             <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
         </footer>
+        <script src="../zomato.js"></script>
     </body>
 </html>
 
