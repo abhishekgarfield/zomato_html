@@ -47,7 +47,7 @@
         </div>
         <div id="filters">
             <div id="find_head_cont4">
-                <div class="fiter_buttons">
+                <div class="fiter_buttons" onclick="showfilter(event)">
                     <span><i class="fa fa-filter"></i>Filters</span>
                 </div>
                 <div class="fiter_buttons">
@@ -59,7 +59,7 @@
                 <div class="fiter_buttons">
                     <span><i class="fa fa-star"></i>Rating: 4.0+</span>
                 </div>
-                <div class="fiter_buttons" onclick="show()">
+                <div class="fiter_buttons" onclick="showfilter(event)">
                     <span>Cousins<i style="margin-left:6px;" class="fa fa-chevron-down"></i></span>
                 </div>
                 <div class="fiter_buttons">
@@ -67,10 +67,11 @@
                 </div>
             </div>
         </div>
-        <div class="show_filters">
+        <div class="show_filters hid" id="show_filters">
             <div class="show_filters_2">
                 <h1>Filters</h1>
-                <hr style="margin: 0px;"/>
+                <i class="fa fa-remove" onclick="showfilter(event)"></i>
+                <hr style="margin: 0px;border: 0.5px solid grey ; clear: both;"/>
                 <div class="tabs">
                     <div class="labels">
                         <div class="label" id="default" onclick="show(event,'sort_by')">

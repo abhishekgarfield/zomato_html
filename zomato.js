@@ -84,4 +84,18 @@ slider.oninput = function() {
   output.innerHTML = this.value;
   
 }
+
+function showfilter(e)
+{
+    var el=document.getElementById("show_filters");
+    console.log("fired");
+    if(el.className=="show_filters hid")
+    {
+        el.className="show_filters sho";
+    }
+    else{
+        el.className="show_filters hid";
+    }
+
+}
             
