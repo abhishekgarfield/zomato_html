@@ -6,7 +6,7 @@ body
 }
 
 /*header*/
-#nav_phon_cont
+.nav_bar ul li:nth-child(2)
 {
     display: none;
 }
@@ -16,11 +16,7 @@ header
     background-position: center center;
     background-size: cover
 }
-#phon_nav
-    {
-       display: none;
-       
-    }
+
 
 #head_cont1
 {
@@ -32,9 +28,12 @@ clear: both;
 overflow: hidden;
 
 }
-#nav_bar
+.nav_bar
 {
     overflow: hidden;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
 }
 #nav_info h1
 {
@@ -68,11 +67,11 @@ overflow: hidden;
 
 #download
 {
+    align-self: flex-start;
     position: absolute;
-    left: 7rem;
-    top: 1.9rem;
-    font-weight:bolder;
-   font-size: 14px;
+    left: 10rem;
+    font-weight: 800;
+    font-size: 0.9rem;
     
 }
 #nav_title
@@ -87,15 +86,14 @@ overflow: hidden;
     margin: auto;
 }
 
-#nav_bar>ul
+.nav_bar ul
 {
     
     display: flex;
     list-style-type: none;
     color:white;  
     margin: 0rem;
-    width: 67%;
-    float: right;
+    width: 100%;
     justify-content: flex-end;
     padding: 30px 0px
     
@@ -421,74 +419,51 @@ footer .fa
 
 @media screen and (max-width:790px)
 {
-    #nav_bar ul
+    
+    
+    
+    
+    .nav_bar ul li:not(:nth-child(2)){
+        display: none;
+    }
+    .nav_bar.responsive ul li
+    {
+        display:block;
+        position: relative;
+        padding: 37px 30px 0px 30px;
+        height: 10%;
+    }
+    .nav_bar #phonenav
+    {
+        display: block;
+        padding: 20px 30px 0px 30px;
+        position: absolute;
+        left:0;
+        top:0;
+    }
+    .nav_bar #download
     {
         display: none;
-        visibility: hidden;
     }
-    .fa
+    .nav_bar.responsive ul
     {
-        color: azure;
-        font-size: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: black;
+        height: 100%;
+        
     }
-    #phon_nav i
+    .nav_bar.responsive ul li:not(:nth-child(2)):hover
     {
-        background-color: transparent;
-        font-size: 1.7rem;
-        margin: 11px 0px 0px 13px;
+        background-color: rgba(211, 211, 211, 0.527);
     }
-    #phon_nav
-    {
-        width: 90%;
-        display: block;
-    }
-    #nav_phon_cont
+    .nav_bar.responsive
     {
         position: fixed;
-        height: 100%;
-        display: none;
-        width: 100%;
-        top: 38px;
+        width: 100vw;
+        height: 100vh;
         background-color: white;
-    }
-    #nav_phon_cont>ul
-    {
-        list-style-type: none;
-    }
-    #nav_phon_cont ul li
-    {
-        padding: 2% 0%;
-        color: rgb(105, 105, 105);
-    }
-    #nav_phon_cont > img
-    {
-        position: absolute;
-        right: 13px;
-        width: 9rem;
-        height: 2rem;
-        top: -29px;
-    }
-    #nav_info >h1
-    {
-        font-size: 24px;
-        width: 90%;
-        margin: auto;
-    }
-    #nav_options > select
-    {
-        height: 44px;
-        width: 100%;
-    }
-    #nav_options 
-    {
-        height: 88px;
-        width: 80%;
-        border-radius: 15px;
-    }
-    .fa-remove
-    {
-        color: black;
-        font-size: 3rem;
     }
     #online_cont1>p
     {
@@ -897,12 +872,16 @@ footer .fa
 .show_filters
 {
     position: fixed;
+    display: none;
     height: 100vh;
     width: 100vw;
     overflow: scroll;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.742);
     
+}
+.show_filters.sho{
+    display: block;
 }
 .show_filters_2
 {
@@ -942,13 +921,8 @@ footer .fa
     background-color: #d3d3d3e4;
 
 }
-.sho{
-    display: block;
 
-}
-.hid{
-    display: none;
-}
+
 .label >h1
 {
     margin: 0px;

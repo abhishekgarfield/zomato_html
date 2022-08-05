@@ -94,12 +94,28 @@ function showfilter(e)
 {
     var el=document.getElementById("show_filters");
     console.log("fired");
-    if(el.className=="show_filters hid")
+    if(el.className=="show_filters")
     {
-        el.className="show_filters sho";
+        el.className +=" sho";
     }
     else{
-        el.className="show_filters hid";
+        el.className="show_filters";
+    }
+
+}
+function shownav(e)
+{
+    var nav=document.getElementById("nav_bar");
+    var el=documen.getElementById("phonenav");
+    if(nav.className=="nav_bar")
+    {
+        nav.className +=" responsive";
+        el.className ="fa fa-remove";
+    }
+    else{
+        nav.className="nav_bar";
+        el.className ="fa fa-bars";
+
     }
 
 }
