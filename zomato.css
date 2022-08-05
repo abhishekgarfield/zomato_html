@@ -323,9 +323,10 @@ ul li
     letter-spacing: 2px;
 
 }
-#option_1 ,#option_2 ,#option_3
+.option
 {
     display: none;
+    padding-top: 1rem;
 }
 /* footer */
 
@@ -383,6 +384,7 @@ footer>p
     margin-top: 0rem;
     color: rgb(79, 79, 79);
     line-height: 1.7rem;
+    transition: ;
  
 }
 footer .fa
@@ -421,25 +423,45 @@ footer .fa
 {
     
     
-    
+    .fa-remove
+    {
+        transform: rotateY(180deg);
+        transition: 0.9s;
+    }
+    .fa-bars
+    {
+        transform: rotate(0deg);
+        transition: 0.9s;
+
+    }
+    #nav_info h1
+    {
+        margin-top:5rem ;
+    }
     
     .nav_bar ul li:not(:nth-child(2)){
         display: none;
     }
-    .nav_bar.responsive ul li
+    .nav_bar.responsive ul li:not(:nth-child(2))
     {
         display:block;
         position: relative;
         padding: 37px 30px 0px 30px;
         height: 10%;
+        color:rgba(0, 0, 0, 0.475);
+    }
+    .nav_bar ul
+    {
+        padding: 0px;
     }
     .nav_bar #phonenav
     {
         display: block;
         padding: 20px 30px 0px 30px;
         position: absolute;
-        left:0;
         top:0;
+        left: -10px;
+        font-size: 1.5rem;
     }
     .nav_bar #download
     {
@@ -451,7 +473,10 @@ footer .fa
         justify-content: flex-start;
         flex-direction: column;
         color: black;
+        margin: 0rem;
+        padding: 4rem 0rem 0rem 0rem;
         height: 100%;
+        transition:0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         
     }
     .nav_bar.responsive ul li:not(:nth-child(2)):hover
@@ -464,6 +489,7 @@ footer .fa
         width: 100vw;
         height: 100vh;
         background-color: white;
+        transition: 0.5s ;
     }
     #online_cont1>p
     {
@@ -878,7 +904,6 @@ footer .fa
     overflow: scroll;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.742);
-    
 }
 .show_filters.sho{
     display: block;
@@ -892,6 +917,7 @@ footer .fa
     z-index: 11;
     height:30rem;
     border-radius: 10px;
+    transition: 8s;
 }
 .show_filters_2 > h1
 {
@@ -899,8 +925,7 @@ footer .fa
     font-size: 1.6rem;
     font-weight: 700;
     width: 70%;
-
-    margin:1.8rem 0rem 1.5rem 1rem
+    margin:1.8rem 0rem 1.5rem 1rem;
 }
 .show_filters_2 i{
     float: right;
@@ -919,6 +944,10 @@ footer .fa
 }
 .active{
     background-color: #d3d3d3e4;
+
+}
+.option.sho{
+    display: block;
 
 }
 

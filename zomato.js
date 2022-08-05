@@ -1,15 +1,17 @@
-            function myfunc()
+            function myfunc(e,option,arrow_pos)
             {
-                var el=document.getElementById("option_1");
-                if(el.style.display==="none")
+                var el=document.getElementById(option);
+                console.log("triggered");
+                if(el.className=="option")
                 {
-                    el.style.display="block";
+                    el.className+=" sho";
                 }
                 else
                 {
-                    el.style.display="none";
+                    el.className="option";
                 }
             };
+            /*
             function myfunct()
             {
                 var el=document.getElementById("option_2");
@@ -56,6 +58,7 @@
                     th.style.position="relative";
                 }
             };
+            */
             function show(e,labelname)
             {
              var label_output=document.getElementsByClassName("label_output");
@@ -106,7 +109,7 @@ function showfilter(e)
 function shownav(e)
 {
     var nav=document.getElementById("nav_bar");
-    var el=documen.getElementById("phonenav");
+    var el=document.getElementById("phonenav");
     if(nav.className=="nav_bar")
     {
         nav.className +=" responsive";
