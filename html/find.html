@@ -368,22 +368,32 @@
         <div id="explore">
             <div id="exp_cont1">
                 <h1>Explore options near me</h1>
-                <div id="exp_option" onclick="myfunc()">
-                    <h2>Popular cuisines near me</h2>
-                    <div id="option_1">
-                        hi this is for tshshkjsdgakdgjakjsd
+                <div id="exp_option" onclick="myfunc(event,'option_1',1)">
+                    <h2>Popular cuisines near me  <i class="fa fa-angle-down" style="float: right;"></i></h2>
+                    <div id="option_1" class="option">
+                        Bakery food near meBeverages food near meBiryani food near meBurger food near
+                         meChinese food near meContinental food near meDesserts food near meIce Cream food near 
+                         meItalian food near meMithai food near meMomos food near meMughlai food near meNorth Indian food 
+                         near mePizza food near meRolls food near meSandwich food near meShake food near meSouth Indian food near 
+                         meStreet food near meWraps food near me
                     </div>
                 </div>
-                <div id="exp_option2" onclick="myfunct()">
-                    <h2>Popular restaurant types near me</h2>
-                    <div id="option_2">
-                        hi this is for tshshkjsdgakdgjakjsd
+                <div id="exp_option2" onclick="myfunc(event,'option_2',2)">
+                    <h2>Popular restaurant types near me <i class="fa fa-angle-down" style="float: right;"></i></h2>
+                    <div id="option_2" class="option">
+                        Bakeries near meBars near meBeverage Shops near meBhojanalya near meCafés near meCasual
+                         Dining near meClubs near meConfectioneries near meDessert Parlors near meDhabas near meFine 
+                         Dining near meFood Courts near meFood Trucks near meKiosks 
+                        near meLounges near meMicrobreweries near mePaan Shop near mePubs near meQuick Bites near meSweet Shops near me
                     </div>
                 </div>
-                <div id="exp_option3" onclick="myfunctio()">
-                    <h2>Cities We Deliver To</h2>
-                    <div id="option_3">
-                        hi this is for tshshkjsdgakdgjakjsd
+                <div id="exp_option3" onclick="myfunc(event,'option_3',3)">
+                    <h2>Cities We Deliver To  <i class="fa fa-angle-down" style="float: right;"></i></h2>
+                    <div id="option_3" class="option">
+                        Dining near meClubs near meConfectioneries near meDessert Parlors near meDhabas near meFine 
+                         Dining near meFood Courts near meFood Trucks near meKiosks 
+                        near meLounges near meMicrobreweries near mePaan Shop near mePubs near meQuick Bites near meSweet Shops near me
+                        
                     </div>
                 </div>
             </div>
@@ -392,92 +402,80 @@
             <div id="logo">
                 <img src="/images/homepage/foot_logo.jpg">
                 <div id="foot_option">
-                    <select>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                    </select>
-                    <select>
-                        <option>English</option>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                        <option>India</option>
-                    </select>
+                    <div id="foot_option_select1">
+                        <select>
+                            <option>India</option>
+                            <option>India</option>
+                            <option>India</option>
+                            <option>India</option>
+                            <option>India</option>
+                        </select>
+                    </div>
+                    <div id="foot_option_select2">
+                        <select>
+                            <option>English</option>
+                            <option>India</option>
+                            <option>India</option>
+                            <option>India</option>
+                            <option>India</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="foot_container">
-                <div class="foot_cont">
-                    <ul>
-                        <li><b>ABOUT ZOMATO</b></li>
-                        <li>Who we are</li>
-                        <li>Blog</li>
-                        <li>Work with us</li>
-                        <li>Invstor relatiosn</li>
-                        <li>Report fraud</li>
-                    </ul>
-                </div>
-                <div class="foot_cont">
-                    <ul>
-                        <li><b>ZOMAVERSE</b></li>
-                        <li>Zomato</li>
-                        <li>Feeding India</li>
-                        <li>Hyperpure</li>
-                        <li>Zomaland</li>
-                    </ul>
-                </div>
-                <div class="foot_cont">
-                    <ul>
-                        <li><b>FOR RESTAURANTS</b></li>
-                        <li>Partner with us</li>
-                        <li>Apps for you</li>
-                    </ul>
-                    <ul>
-                        <li><b> FOR ENTERPRISES</b></li>
-                        <li>Zomato for work</li>
-                    </ul>
-                </div>
-                <div class="foot_cont">
-                    <ul>
-                        <li><b>LEARN MORE</b></li>
-                        <li>Privacy</li>
-                        <li>Security</li>
-                        <li>Terms</li>
-                        <li>Sitemap</li>
-                    </ul>
-                </div>
-                <div class="foot_cont">
-                    <ul>
-                        <li><b>SOCIAL LINKS</b></li>
-                        <li><i class="fa fa-linkedin"></i>
-                            <i class="fa fa-instagram"></i>
-                            <i class="fa fa-twitter"></i>
-                            <i class="fa fa-youtube"></i>
-                            <i class="fa fa-facebook"></i>
-                        </li>
-                        <li><img src="/images/homepage/apple.png" alt="apple"></li>
-                        <li><img src="/images/homepage/google_play.png" alt="apple"></li>
-                    </ul>
-                </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>ABOUT ZOMATO</b></li>
+                    <li>Who we are</li>
+                    <li>Blog</li>
+                    <li>Work with us</li>
+                    <li>Invstor relatiosn</li>
+                    <li>Report fraud</li>
+                </ul>
             </div>
-            <p>
-                There really is something for everyone on Tinder. Want to get into a relationship? You got it.
-                Trying to find some new friends? Say no more. New kid on campus and looking to make the most of your
-                college experience? Tinder U’s got you covered. Tinder isn’t your average dating site — it’s the
-                most diverse dating app, where adults of all backgrounds and experiences are invited to make
-                connections, memories, and everything in between.
-            </p>
-            <p>
-                There really is something for everyone on Tinder. Want to get into a relationship? You got it.
-                Trying to find some new friends? Say no more. New kid on campus and looking to make the most of your
-                college experience? Tinder U’s got you covered. Tinder isn’t your average dating site — it’s the
-                most diverse dating app, where adults of all backgrounds and experiences are invited to make
-                connections, memories, and everything in between.
-            </p>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>ZOMAVERSE</b></li>
+                    <li>Zomato</li>
+                    <li>Feeding India</li>
+                    <li>Hyperpure</li>
+                    <li>Zomaland</li>
+                </ul>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>FOR RESTAURANTS</b></li>
+                    <li>Partner with us</li>
+                    <li>Apps for you</li>
+                </ul>
+                <ul>
+                    <li><b> FOR ENTERPRISES</b></li>
+                    <li>Zomato for work</li>
+                </ul>
+            </div>
+            <div class="foot_cont">
+                <ul>
+                    <li><b>LEARN MORE</b></li>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div class="foot_cont" id="social_link">
+                <ul>
+                    <li><b>SOCIAL LINKS</b></li>
+                    <li><i class="fa fa-linkedin"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                        <i class="fa fa-facebook"></i>
+                    </li>
+                    <li><img src="/images/homepage/apple.png" alt="apple"></li>
+                    <li><img src="/images/homepage/google_play.png" alt="apple"></li>
+                </ul>
+            </div>
             <hr style="clear:both;"></hr>
-            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2021-2022  &copy; abhishekgarfield Ltd. All rights reserved.</p>
         </footer>
         <script src="../zomato.js"></script>
     </body>

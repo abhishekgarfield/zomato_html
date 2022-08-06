@@ -417,156 +417,6 @@ footer .fa
     width: 50%;
     float: right;
 }
-/* phone and tab */
-
-@media screen and (max-width:790px)
-{
-    
-    
-    .fa-remove
-    {
-        transform: rotateY(180deg);
-        transition: 0.9s;
-    }
-    .fa-bars
-    {
-        transform: rotate(0deg);
-        transition: 0.9s;
-
-    }
-    #nav_title
-    {
-        margin-top:5rem ;
-    }
-    
-    .nav_bar ul li:not(:nth-child(2)){
-        display: none;
-    }
-    .nav_bar.responsive ul li:not(:nth-child(2))
-    {
-        display:block;
-        position: relative;
-        padding: 37px 30px 0px 30px;
-        height: 10%;
-        color:rgba(0, 0, 0, 0.475);
-    }
-    .nav_bar ul
-    {
-        padding: 0px;
-    }
-    .nav_bar #phonenav
-    {
-        display: block;
-        padding: 20px 30px 0px 30px;
-        position: absolute;
-        top:0;
-        left: -10px;
-        font-size: 1.5rem;
-    }
-    #nav_options
-    {
-        height: 90px;
-    }
-    #nav_options > select
-    {
-        width: 100%;
-        padding: 2px 0px;
-        height: 50%;
-    }
-    .nav_bar #download
-    {
-        display: none;
-    }
-    .nav_bar.responsive ul
-    {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        color: black;
-        margin: 0rem;
-        padding: 4rem 0rem 0rem 0rem;
-        height: 100%;
-        transition:0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-        
-    }
-    .nav_bar.responsive ul li:not(:nth-child(2)):hover
-    {
-        background-color: rgba(211, 211, 211, 0.527);
-    }
-    .nav_bar.responsive
-    {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: white;
-        transition: 0.5s ;
-    }
-    #online_cont1>p
-    {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space:nowrap;
-        font-size: 13px; 
-    }
-    #popular_local
-    {
-        height: fit-content;
-        padding-left: 0.8rem;
-    }
-    #popular_local >p
-    {
-        margin: 1px;
-        font-size: 16px;
-    }
-    #popular_local >h4
-    {
-        font-size: 16px;
-        margin: 0.5rem 0rem;
-        font-weight: 300;
-    }
-    #online_cont1 >h5 
-    {
-        font-size: 14px;
-    }
-    #app_download_img
-    {
-        display: none;
-        visibility: hidden;
-    }
-    #app_download_form
-    {
-        width: 100%;
-    }
-    .foot_cont
-    {
-        width: 50%;
-        float: left;
-        overflow: hidden;
-        height: 13rem;
-    }
-    #foot_option
-    {
-        clear: both;
-        float: none;
-        margin: 1rem 0rem 0rem 0rem;
-        overflow: hidden;
-        width: 40%;
-    }
-    #foot_option_select1 , #foot_option_select2
-    {
-        margin: 0rem;
-        float: left;
-    }
-    footer select
-    {
-        margin: 0rem;
-    }
-    #social_link
-    {
-        display: none;
-        visibility: hidden;
-    }
-}
 
     /* find page */
 
@@ -927,7 +777,6 @@ footer .fa
     z-index: 11;
     height:30rem;
     border-radius: 10px;
-    transition: 8s;
 }
 .show_filters_2 > h1
 {
@@ -953,8 +802,13 @@ footer .fa
     
 }
 .active{
-    background-color: #d3d3d3e4;
+    background-color:white;
+    border-left:0.7rem solid red;
 
+}
+.label.active:hover{
+    background-color:white;
+    border-left:0.7rem solid red;
 }
 .option.sho{
     display: block;
@@ -1129,4 +983,189 @@ margin-left: 1rem;}
 .fiter_buttons:hover
 {
     background-color: rgba(211, 211, 211, 0.332);
+}
+/* phone and tab */
+
+@media screen and (max-width:790px)
+{
+    
+    
+    .fa-remove
+    {
+        transform: rotateY(180deg);
+        transition: 0.9s;
+    }
+    .fa-bars
+    {
+        transform: rotate(0deg);
+        transition: 0.9s;
+
+    }
+
+
+    .label_output #rad .checks 
+    {
+        flex: 0 0 90%;
+    }
+    #nav_title
+    {
+        margin-top:5rem ;
+    }
+    
+    .nav_bar ul li:not(:nth-child(2)){
+        display: none;
+    }
+    .nav_bar.responsive ul li:not(:nth-child(2))
+    {
+        display:block;
+        position: relative;
+        padding: 37px 30px 0px 30px;
+        height: 10%;
+        color:rgba(0, 0, 0, 0.475);
+    }
+    #nav_info {
+        width: 85%;
+    }
+    #nav_info h1{
+        font-size: 28px;
+    }
+    #nav_title >img
+    {
+        width: 47%;
+    }
+    .nav_bar ul
+    {
+        padding: 0px;
+    }
+    .nav_bar #phonenav
+    {
+        display: block;
+        padding: 20px 30px 0px 30px;
+        position: absolute;
+        top:0;
+        left: -10px;
+        font-size: 1.5rem;
+    }
+    #nav_options
+    {
+        height: 100px;
+        width:80%;
+        margin: 0rem auto 2rem auto;
+    }
+    #nav_options > select
+    {
+        width: 100%;
+        padding: 2% 0%;
+        height: 45%;
+    }
+    .nav_bar #download
+    {
+        display: none;
+    }
+    .nav_bar.responsive ul
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        color: black;
+        margin: 0rem;
+        padding: 4rem 0rem 0rem 0rem;
+        height: 100%;
+        transition:0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        
+    }
+    .nav_bar.responsive ul li:not(:nth-child(2)):hover
+    {
+        background-color: rgba(211, 211, 211, 0.527);
+    }
+    .food_item_card
+    {
+        flex: 1 0 50%;
+    }
+    .nav_bar.responsive
+    {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        transition: 0.5s ;
+    }
+    #online_cont1>p
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        font-size: 13px; 
+    }
+    #popular_local
+    {
+        height: fit-content;
+        padding-left: 0.8rem;
+    }
+    #popular_local >p
+    {
+        margin: 1px;
+        font-size: 16px;
+    }
+    #popular_local >h4
+    {
+        font-size: 16px;
+        margin: 0.5rem 0rem;
+        font-weight: 300;
+    }
+    #online_cont1 >h5 
+    {
+        font-size: 14px;
+    }
+    #app_download_img
+    {
+        display: none;
+        visibility: hidden;
+    }
+    #app_download_form
+    {
+        width: 100%;
+    }
+    .foot_cont
+    {
+        width: 50%;
+        float: left;
+        overflow: hidden;
+        height: 13rem;
+    }
+    #foot_option
+    {
+        clear: both;
+        float: none;
+        margin: 1rem 0rem 0rem 0rem;
+        overflow: hidden;
+        width: 40%;
+    }
+    #foot_option_select1 , #foot_option_select2
+    {
+        margin: 0rem;
+        float: left;
+    }
+    footer select
+    {
+        margin: 0rem;
+    }
+    #social_link
+    {
+        display: none;
+        visibility: hidden;
+    }
+    #find_head_cont3_2, #find_head_cont3_3 
+    {
+        display: none;
+    }
+}
+@media screen and  (max-width: 480px)
+{
+
+.food_item_card
+    {
+        flex: 1 0 90%;
+    }
+    
 }
