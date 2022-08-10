@@ -3,7 +3,9 @@ body
     margin: 0px;
     padding: 0px;
     font-family: Okra,Helvetica,sans-serif;
+    
 }
+
 
 /*header*/
 .nav_bar ul li:nth-child(2)
